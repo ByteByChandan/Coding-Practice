@@ -25,5 +25,6 @@ public class Q1 {
         SmallIdentify def = new SmallIdentify();
         int result=def.Small(arr);
         System.out.println("Your smallest number is :"+ result);
+        sc.close();
     }
 }

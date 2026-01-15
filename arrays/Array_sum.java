@@ -19,6 +19,8 @@ public class Array_sum {
         Sum obj = new Sum();
         int SumOfArray=obj.Sum_array(arr);
         System.out.println("Your Sum of Array is : "+SumOfArray);
+            sc.close();
     }
+
     
 }

@@ -20,6 +20,7 @@ public class Reverse_digit {
         Rev obj=new Rev();
         int reverse=obj.number_reverse(number);
         System.out.println("The reverse Number is: "+reverse);
+        sc.close();
     }
     
 }

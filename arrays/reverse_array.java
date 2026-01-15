@@ -24,5 +24,6 @@ public class reverse_array {
         for(int i=0;i<reverse.length;i++){
             System.out.print(reverse[i]);
         }
+            sc.close();
     }
 }

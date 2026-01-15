@@ -21,5 +21,6 @@ public class Largest_number {
         Find_number obj=new Find_number();
         int Larger_value=obj.Search_number(arr);
         System.out.println("Your LArge Element Form this array is : "+Larger_value);    
+            sc.close();
     }
 }
