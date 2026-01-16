@@ -1,15 +1,16 @@
 import java.util.*;
-class fibbo{
+class fiboo{
     public void fibbo_range(int n){
        long a=0;
        long b=1;
        long fibbo =0;
       //System.out.print(" "+fibbo);
         for (int i=0;i<n;i++){
+            System.out.print(" "+fibbo);
             fibbo=a+b;
             b=a;
             a=fibbo;
-            System.out.print(" "+fibbo);
+
         }
 
     }
@@ -19,7 +20,7 @@ class fibbo{
         Scanner sc=new Scanner(System.in);
         System.out.println("enter your range:");
         int R= sc.nextInt();
-        fibbo obj= new fibbo();
+        fiboo obj= new fiboo();
         obj.fibbo_range(R);
         sc.close();
 
