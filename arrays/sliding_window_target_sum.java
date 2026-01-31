@@ -1,12 +1,13 @@
 import java.util.Scanner;
 class window{
     public int Window_sum(int []arr,int S){
-        int csum=0;
+        //int csum=0;
         int msum=-100;
         int Size=arr.length;
         int k=S;
         for(int i =0;i<Size-k;i++){
-            for(int j=i;j<k-1;j++){
+            int csum=0;
+            for(int j=i;j<k+i;j++){
                 csum=csum+arr[j];
                 if(csum>msum){
                     msum=csum;
