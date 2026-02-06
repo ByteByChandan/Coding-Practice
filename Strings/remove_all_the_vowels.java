@@ -10,6 +10,7 @@ class remove_all_the_vowels {
             char l=str.charAt(i);
             if(l=='a'||l=='A' ||l=='e'||l=='E'||l=='i'||l=='o'||l=='O'||l=='u'||l=='U' ){
                 str.deleteCharAt(i);
+                i--;
             }
         }
         System.out.println("After removing vowels form string become: "+str);
