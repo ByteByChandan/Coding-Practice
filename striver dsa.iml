@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/number System" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/OOP" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hasing" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
