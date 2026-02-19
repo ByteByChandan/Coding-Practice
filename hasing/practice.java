@@ -21,6 +21,16 @@ public class practice {
 //        }
         System.out.println(mp.get("Chandan"));
         System.out.println(mp.get("ram"));// return null
+        mp.put("Chandan",88); // put use for insert and update both;
+        System.out.println(mp.get("Chandan"));
+        System.out.println(mp.remove("Rahul"));
+        // Cheaking if a key  is in the hash map or not
+        System.out.println(mp.containsKey("Sayan")); // give true
+        System.out.println(mp.containsKey("Sayani")); // give false
+        // Adding a new entry only if the new key doesnt exist already
+        if(!mp.containsKey("ramu")){
+            mp.put("ramu",99);
+        }
     }
 
 }
