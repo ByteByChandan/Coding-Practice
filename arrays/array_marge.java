@@ -1,19 +1,21 @@
 import java.util.Scanner;
 class array_marger{
-    public void marging(int []arr,int []jrr,int m){
-        int [] zrr=new int[m];
-        int x=0;
-        for(int i =0;i<arr.length;i++){
-            zrr[x++]=arr[i];
-        }
-        for(int j=m-arr.length;j< zrr.length;j++){
-            zrr[x++]=jrr[j];
-        }
-        System.out.println("After margine two arrays: ");
-        for (int y=0;y< zrr.length;y++){
-            System.out.println(zrr[y]);
+    public void marging(int []arr, int []jrr, int m){
+        int [] zrr = new int[m];
+        int x = 0;
+
+        for(int i = 0; i < arr.length; i++){
+            zrr[x++] = arr[i];
         }
 
+        for(int j = 0; j < jrr.length; j++){
+            zrr[x++] = jrr[j];
+        }
+
+        System.out.println("After merging two arrays: ");
+        for (int y = 0; y < zrr.length; y++){
+            System.out.println(zrr[y]);
+        }
     }
 }
 
