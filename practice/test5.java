@@ -1,10 +1,5 @@
-import java.util.Scanner;
-
-public class test5 {
-    public static void m
-}
 import java.util.*;
-public class Greatest_of_three_number {
+public class test5 {
     public void chii(float[]arr){
         if(arr[0] >= arr[1] && arr[0] >= arr[2]){
             System.out.println("First element is greatest: " + arr[0]);
