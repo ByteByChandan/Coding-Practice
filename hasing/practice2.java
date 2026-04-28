@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -29,6 +30,11 @@ public class practice2 {
             System.out.println(mp.get(i));
 
         }
+        Set<Map.Entry<Integer,String>> entries=mp.entrySet();
+        for(Map.Entry<Integer,String> entry : entries){
+            System.out.println(entry.getKey()+ " : " + entry.getValue());
+        }
+        mp.remove(3);// remove 3 value pair
 
 
     }
