@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class  rev{
-    public String number_reverse (int num){
+    public int number_reverse (int num){
         int n=num;
         int temp=0;
         while (n!=0) {
@@ -8,18 +8,17 @@ class  rev{
             temp=temp*10+digit;
             n=n/10;
         }
-        String temm=Integer.toString(temp);
-        return temm;
+        return temp;
         
     }
 }
-class reverse_digit {
+public class Reverse_digit {
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         System.out.println("Please enter your Number: ");
         int number=sc.nextInt();
         rev obj=new rev();
-        String reverse=obj.number_reverse(number);
+        int reverse=obj.number_reverse(number);
         System.out.println("The reverse Number is: "+reverse);
         sc.close();
     }

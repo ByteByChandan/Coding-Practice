@@ -12,7 +12,7 @@ class  Rev{
         
     }
 }
-public class Reverse_digit {
+public class Reverse_digitt {
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         System.out.println("Please enter your Number: ");
