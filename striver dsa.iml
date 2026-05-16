@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hasing" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedList" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
