@@ -21,6 +21,18 @@ public class linkList_class{
                 tail=temp;
             }
         }
+        void insertAtHead(int val){
+            node t = new node(val);
+            if(head==null){
+                head=t;
+                tail=t;
+            }
+            else{
+                t.next=head;
+                head=t;
+            }
+
+        }
         void  insertAt(int idx,int val){
             node t=new node(val);
             node temp=head;
@@ -59,6 +71,13 @@ public class linkList_class{
             }
             return count;
         }
+        int getAt(int idx){
+            node temp=head;
+            for(int i =1;i<=idx;i++){
+                temp=temp.next;
+            }
+            return temp.data;
+        }
     }
 
     public static void main(String []args){
@@ -73,5 +92,11 @@ public class linkList_class{
         System.out.println(size);
         ll.insertAt(2,100);
         ll.display();
+        System.out.println();
+        ll.insertAtHead(54);
+        ll.display();
+        System.out.println();
+        int data=ll.getAt(4);
+        System.out.print(data);
     }
 }
