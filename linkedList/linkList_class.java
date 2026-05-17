@@ -10,15 +10,18 @@ public class linkList_class{
     public static class linkedlist{
         node head=null;
         node tail=null;
+        int size=0;
         void insertAtEnd(int val){
             node temp=new node(val);
             if(head==null){
                 head=temp;
                 tail=temp;
+                size++;
             }
             else{
                 tail.next=temp;
                 tail=temp;
+                size++;
             }
         }
         void insertAtHead(int val){
@@ -26,10 +29,12 @@ public class linkList_class{
             if(head==null){
                 head=t;
                 tail=t;
+                size++;
             }
             else{
                 t.next=head;
                 head=t;
+                size++;
             }
 
         }
@@ -38,9 +43,11 @@ public class linkList_class{
             node temp=head;
             if(idx==0){
                 insertAtHead(val);
+                size++;
             }
             else if(idx==size()){
                 insertAtEnd(val);
+                size++;
             }
             else if (idx<0 || idx>size()){
                 System.out.print("Incorrect index");
@@ -51,8 +58,18 @@ public class linkList_class{
                 }
                 t.next = temp.next;
                 temp.next = t;
+                size++;
             }
 
+        }
+        void InserAtEnd(int val){
+            node t= new node(val);
+            node temp=head;
+            while(temp.next!=null){
+                temp=temp.next;
+            }
+            temp.next=t;
+            size++;
         }
 
     void display(){
@@ -78,6 +95,19 @@ public class linkList_class{
             }
             return temp.data;
         }
+        void deleteAt(int idx){
+            node temp=head;
+            if(idx==1){
+                head=head.next;
+                return;
+            }
+            for(int i=1;i<=idx-1;i++){
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+            tail=temp;
+            size--;
+        }
     }
 
     public static void main(String []args){
@@ -98,5 +128,14 @@ public class linkList_class{
         System.out.println();
         int data=ll.getAt(4);
         System.out.print(data);
+        System.out.println();
+        ll.deleteAt(1);
+        ll.display();
+        System.out.println();
+        ll.deleteAt(1);
+        ll.display();
+        System.out.println();
+        ll.deleteAt(1);
+        ll.display();
     }
 }
