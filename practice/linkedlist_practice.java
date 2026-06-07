@@ -84,7 +84,22 @@ public class linkedlist_practice {
             t.next=temp;
             temp.next=null;
         }
-
+        void deleteAt(int idx){
+            node temp=head;
+            if(idx==0){
+                head=head.next;
+                return;
+            }
+            for(int i =1;i<=idx-1;i++){
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+            tail=temp;
+            if (idx < 0 || idx >= count()) {
+                System.out.println("Invalid index");
+                return;
+            }
+        }
     }
 
 
@@ -103,6 +118,7 @@ public class linkedlist_practice {
             ll.display();
             int length=ll.count();
           System.out.println(length);
+          //ll.insertAtend(,77);
           int getAT=ll.getAt(4);
           System.out.print(getAT);
     }
