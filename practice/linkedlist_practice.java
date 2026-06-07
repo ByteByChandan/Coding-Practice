@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class linkedlist_practice {
     public static class node {
         int data;
@@ -65,6 +67,23 @@ public class linkedlist_practice {
             }
 
         }
+        int getAt(int idx){
+            node temp=head;
+            for(int i =1;i<=idx;i++){
+                temp=temp.next;
+            }
+            return temp.data;
+        }
+
+        void insertAtend(node head,int val){
+            node temp=new node(val);
+            node t=head;
+            while(t.next!=null){
+                t=t.next;
+            }
+            t.next=temp;
+            temp.next=null;
+        }
 
     }
 
@@ -84,5 +103,7 @@ public class linkedlist_practice {
             ll.display();
             int length=ll.count();
           System.out.println(length);
+          int getAT=ll.getAt(4);
+          System.out.print(getAT);
     }
 }
