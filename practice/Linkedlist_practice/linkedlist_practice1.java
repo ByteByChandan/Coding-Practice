@@ -1,6 +1,6 @@
-import java.sql.SQLOutput;
+package Linkedlist_practice;
 
-public class linkedlist_practice {
+public class linkedlist_practice1 {
     public static class node {
         int data;
         node next;
