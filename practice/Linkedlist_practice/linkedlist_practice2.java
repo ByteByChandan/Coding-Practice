@@ -70,7 +70,29 @@ public class linkedlist_practice2 {
             }
 
         }
-
+        int getAt(int idx){
+            node temp=head;
+            for(int i=1;i<=idx;i++){
+                temp=temp.next;
+            }
+            return temp.data;
+        }
+        void deleteAt(int idx){
+            node temp=head;
+            if(idx==0){
+                head=head.next;
+                return;
+            }
+            for(int i =1;i<=idx-1;i++){
+                temp=temp.next;
+            }
+            temp.next=temp.next.next;
+            tail=temp;
+            if (idx < 0 || idx >= size()) {
+                System.out.println("Invalid index");
+                return;
+            }
+        }
     }
     public static void main(String []args){
         linkedlist ll=new linkedlist();
