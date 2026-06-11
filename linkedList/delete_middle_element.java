@@ -28,6 +28,18 @@ public class delete_middle_element {
              }
              System.out.println();
         }
+
+        void leftMiddle(){
+            node fast=head.next;
+            node slow=head;
+            while(fast!=null&& fast.next!=null){
+                slow=slow.next;
+                fast=fast.next.next;
+            }
+            System.out.print("Left Middle of the element is : "+ slow.data);
+            System.out.println();
+        }
+
         void rightMiddle(){
             node slow =head;
             node fast=head;
@@ -35,9 +47,9 @@ public class delete_middle_element {
                 slow=slow.next;
                 fast=fast.next.next;
             }
-            System.out.print("Middle of the element is : "+ slow.data);
+            System.out.print("Right Middle of the element is : "+ slow.data);
+
         }
-        void leftMiddle()
     }
     public static void main(String []args){
         linkedlist ll= new linkedlist();
@@ -48,6 +60,8 @@ public class delete_middle_element {
         ll.add(89);
         ll.add(100);
         ll.display();
+        ll.leftMiddle();
         ll.rightMiddle();
+
     }
 }
